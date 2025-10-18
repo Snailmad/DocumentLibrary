@@ -33,6 +33,7 @@ DOMAIN-KEYWORD,netflix
 DOMAIN-KEYWORD,womenwill
 DOMAIN-KEYWORD,chrome
 #    域名后缀匹配
+DOMAIN-SUFFIX,xiaoyakankan.com
 DOMAIN-SUFFIX,perplexity.ai
 DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,auth0.com
