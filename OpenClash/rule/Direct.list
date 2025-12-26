@@ -1,28 +1,28 @@
-# 直连补充列表(国内域名不解析时，防止走代理使用)
-
-# MyList
-# 域名后缀匹配
+# ===== 直连补充列表 =====
 DOMAIN-SUFFIX,time.windows.com
 DOMAIN-SUFFIX,lanzov.com
 DOMAIN-SUFFIX,hao123.com
 DOMAIN-SUFFIX,snailmad.uk
 DOMAIN-SUFFIX,javbus.com
 DOMAIN-SUFFIX,cute-cloud.de,no-resolve
-
-# 域名关键字匹配
 DOMAIN-KEYWORD,baidu
 
-# 本地IP控制代理状态
-IP-CIDR,10.0.0.0/24,no-resolve
+# ===== 本地IP控制代理状态 =====
+SRC-IP-CIDR,10.0.0.1/32,Proxy,no-resolve
+SRC-IP-CIDR,10.0.0.2/32,Proxy,no-resolve
+SRC-IP-CIDR,10.0.0.0/24,DIRECT,no-resolve
 
-# 国内DNS
+# ===== 国内 DNS =====
 DOMAIN-SUFFIX,dns.alidns.com
 DOMAIN-SUFFIX,doh.pub
-IP-CIDR,219.146.1.66/32,no-resolve
-IP-CIDR,219.147.1.66/32,no-resolve
-IP-CIDR,119.29.29.29/32,no-resolve
-IP-CIDR,223.5.5.5/32,no-resolve
-IP-CIDR,223.6.6.6/32,no-resolve
-IP-CIDR,180.76.76.76/32,no-resolve
-IP-CIDR,114.114.114.114/32,no-resolve
-IP-CIDR,114.114.115.115/32,no-resolve
+IP-CIDR,219.146.1.66/32,DIRECT,no-resolve
+IP-CIDR,219.147.1.66/32,DIRECT,no-resolve
+IP-CIDR,119.29.29.29/32,DIRECT,no-resolve
+IP-CIDR,223.5.5.5/32,DIRECT,no-resolve
+IP-CIDR,223.6.6.6/32,DIRECT,no-resolve
+IP-CIDR,180.76.76.76/32,DIRECT,no-resolve
+IP-CIDR,114.114.114.114/32,DIRECT,no-resolve
+IP-CIDR,114.114.115.115/32,DIRECT,no-resolve
+
+# ===== 兜底 =====
+MATCH,DIRECT
