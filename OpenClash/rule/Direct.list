@@ -12,11 +12,6 @@ DOMAIN-SUFFIX,cute-cloud.de,no-resolve
 # 域名关键字匹配
 DOMAIN-KEYWORD,baidu
 
-# 本地IP控制代理状态
-SRC-IP-CIDR,10.0.0.10/32,Proxy,no-resolve
-SRC-IP-CIDR,10.0.0.2/32,Proxy,no-resolve
-SRC-IP-CIDR,10.0.0.0/24,DIRECT,no-resolve
-
 # 国内DNS
 DOMAIN-SUFFIX,dns.alidns.com
 DOMAIN-SUFFIX,doh.pub
